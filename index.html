@@ -4,7 +4,6 @@
         <title>Keshav Garg</title>
         <style>
             body{
-                background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),aqua;
                 margin:0px;
                 padding:0px;
             }
@@ -39,13 +38,61 @@
                 width:60%;
                 margin: 0px 20%;
             }
+            footer{
+                background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),grey;
+                color:lightgray;
+                font-size: 20px;
+                text-align:center;
+                padding:0.5%;
+                font-family:monospace;
+                padding:2px
+            }
+            nav{
+                text-align: right;
+                background: linear-gradient(rgba(230, 170, 6,0.5),rgba(230, 170, 6,0.5)),grey;
+                position:fixed;
+                width: 100%;
+                height: 50px
+            }
+            #banner{
+                padding-top: 60px;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+                font-size:20px;
+                font-family: fantasy;
+                background: grey;
+                margin: 5px 2px;
+                display: inline-block;
+                padding: 4px
+            }
+            a:hover{
+                color:goldenrod
+            }
+            .logo{
+                font-family:cursive;
+                float:left;
+                color:white;
+                text-shadow: 3px 3px grey;
+                font-weight: bolder;
+                font-size: 40px;
+                padding:0px 20px
+            }
+            @media only screen and (max-width: 600px) {
+                a,footer{font-size:12px}
+            }
         </style>
     </head>
     <body>
         <nav>
-
+            <span class="logo">K.G.</span>
+            <a href="#qualifications">EDUCATION</a>
+            <a href="#technical-skills">TECHNICAL SKILLS</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#summary">ABOUT ME</a>
         </nav>
-        <div class="banner section">
+        <div id="banner" class="section">
             <div class="holder">
                 <div class="title">Keshav Garg</div>
                 <div class="desc">Student</div>
@@ -54,7 +101,7 @@
                 <img id="pic" src="keshav.jpg">
             </div>
         </div>
-        <div class="qualifications section">
+        <div id="qualifications" class="section">
             <div class="holder desc">
             B.TECH, 2022 with 76.46%<br>
             12TH, 2018 with 67.2%<br>
@@ -64,7 +111,7 @@
                 EDUCATIONS
             </div>
         </div>
-        <div class="technical-skills section">
+        <div id="technical-skills" class="section">
             <div class="holder title">
                 TECHNICAL SKILLS
             </div>
@@ -74,7 +121,7 @@
                 • C, PYTHON<br>
             </div>
         </div>
-        <div class="skills section">
+        <div id="skills" class="section">
             <div class="holder desc">
                 • Communication skills<br>
                 • Interpersonal skills<br>
@@ -86,7 +133,7 @@
                 SKILLS
             </div>
         </div>
-        <div class="summary section">
+        <div id="summary" class="section">
             <div class="holder title">
                 SUMMARY
             </div>
@@ -98,9 +145,8 @@ communication skills.<br>
 </div>
         </div>
         <footer>
-            Aggarwal Mandi, Tatiri, Baghpat, Pin-250601 · +91-8126721329
-keshavgupta0706@gmail.com · live:.cid.58b51fd6a3cd86b2
-
+            | Aggarwal Mandi, Tatiri, Baghpat, Pin-250601 |·| +91-8126721329  |  <br>
+            | keshavgupta0706@gmail.com |·| live:.cid.58b51fd6a3cd86b2 |
         </footer>
     </body>
 </html>
